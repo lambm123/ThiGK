@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Update</h2>
+        <form class="form-horizontal" method="POST" action="/linhkien/update">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="id">ID: </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="id" placeholder="<%= data.Item.id %>" value="<%= data.Item.id %>"  name="id">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Ten_LinhKien">Ten linh kien:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Ten_LinhKien" placeholder="Enter ten linh kien" name="Ten_LinhKien">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="DonViTinh">Don vi tinh:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="DonViTinh" placeholder="Enter don vi tinh" name="ten_sinhvien">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Gia">Gia:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Gia" placeholder="Enter Gia" name="Gia">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="ChiTiet">Chi tiet:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ChiTiet" placeholder="Enter chi tiet" name="ChiTiet">
+                </div>
+            </div>
+      
+        </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+
+</html>
